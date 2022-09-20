@@ -1,33 +1,22 @@
 /* Moonlight Theme Palette
 ------------------------------------------*/
 :root {
-    --moonlight-desaturated-gray: #7F85A3;
-    --moonlight-dark-blue: #3E68D7;
-    --moonlight-blue: #82AAFF;
-    --moonlight-sky-blue: #65BCFF;
-    --moonlight-cyan: #86E1FC;
-    --moonlight-red: #FF757F;
-    --moonlight-dark-red: #FF5370;
-    --moonlight-light-red: #FF98A4;
-    --moonlight-yellow: #FFC777;
-    --moonlight-orange: #FF966C;
-    --moonlight-dark-orange: #FC7B7B;
-    --moonlight-teal: #4FD6BE;
-    --moonlight-green: #C3E88D;
-    --moonlight-purple: #C099FF;
-    --moonlight-pink: #FCA7EA;
-    --moonlight-indigo: #7A88CF;
-    --moonlight-bright-cyan: #B4F9F8;
-  
-    --moonlight-gray-10-alt: #BCC4D6;
-    --moonlight-gray-10: #C8D3F5;
-    --moonlight-gray-9: #B4C2F0;
-    --moonlight-gray-8: #A9B8E8;
-    --moonlight-gray-7: #828BB8;
-    --moonlight-gray-6: #444A73;
-    --moonlight-gray-5: #2F334D;
-    --moonlight-gray-4: #222436;
-    --moonlight-gray-3: #1E2030;
-    --moonlight-gray-2: #191A2A;
-    --moonlight-gray-1: #131421;
+	--moonlight-gray: #3A3E59;
+	--moonlight-black: #222436;
+	--red: #FF757F;
+	--rose: #FF98A4;
+	--orange: #FFC777;
+	--yellow: #FFFF81;
+	--green: #4FD68D;
+	--teal: #4FD6BB;
+	--cyan: #86E1FC;
+	--blue: #599DFF;
+	--indigo: #7A88CF;
+	--purple: #C099FF;
+	--pink: #FCA7EA;
+	--white: #F8F8F8;
+	--bright-grey: #7F85A3;
+	--light-gray: #7A7A7A;
+	--dark-gray: #202020;
+	--black: #050505;
 }
