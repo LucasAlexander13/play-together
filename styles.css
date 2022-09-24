@@ -24,6 +24,8 @@
 	--black: #050505;
 }
 
+/* Entire Document
+------------------------------------------*/
 * {
 	margin: 0;
 	padding: 0;
@@ -38,6 +40,8 @@ body * {
 	line-height: 160%;
 }
 
+/* Header
+------------------------------------------*/
 main, header {
 	max-width: 580px;
 	width: 90%;
@@ -56,6 +60,9 @@ header img {
 	width: 120px;
 }
 
+
+/* Section
+------------------------------------------*/
 section {
 	display: grid;
 	margin-bottom: 40px;
@@ -87,6 +94,9 @@ section ul {
 	gap: 16px;
 }
 
+
+/* Section Content
+------------------------------------------*/
 section ul li img {
 	transition: transform .3s
 }
