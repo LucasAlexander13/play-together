@@ -33,6 +33,7 @@
 }
 body {
 	background-color: var(--github-black);
+	animation: fromTop 1s;
 }
 
 body * {
@@ -58,6 +59,8 @@ header img {
 	margin-top: 40px;
 	margin-bottom: 24px;
 	width: 120px;
+	height: calc(100% + 64px);
+	animation: fromTop .8s 1s backwards;
 }
 
 
@@ -69,12 +72,21 @@ section {
 	gap: 24px;
 }
 
+section div:first-child {
+	animation: fromLeft 1s;
+}
+
 section div {
 	background-color: var(--moonlight-black);
 	border-top: 4px solid var(--red);
 	padding: 32px;
 	padding-top: 24px;
 	border-radius: 8px;
+	animation: fromRight 1s;
+}
+
+section div:last-child {
+	animation: fromLeft 1s;
 }
 
 section h2 {
@@ -117,4 +129,34 @@ section ul li img:hover {
 
 .social-list {
 	font-size: larger;
+}
+
+/* Animations
+------------------------------------------*/
+
+@keyframes fromLeft {
+	from {
+		transform: translateX(-200px);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes fromRight {
+	from {
+		transform: translateX(200px);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes fromTop {
+	from {
+		transform: translateY(-200px);
+	}
+	to {
+		transform: translateY(0);
+	}
 }
