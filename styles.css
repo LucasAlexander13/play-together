@@ -33,7 +33,6 @@
 }
 body {
 	background-color: var(--github-black);
-	animation: fromTop 1s;
 }
 
 body * {
@@ -56,11 +55,10 @@ header {
 header img {
 	border-radius: 100%;
 	border: 4px solid var(--red);
-	margin-top: 40px;
-	margin-bottom: 24px;
+	margin: 24px auto;
 	width: 120px;
-	height: calc(100% + 64px);
-	animation: fromTop .8s 1s backwards;
+	height: calc(100% + 48px);
+	animation: fromTop 1s .4s backwards;
 }
 
 
@@ -73,7 +71,8 @@ section {
 }
 
 section div:first-child {
-	animation: fromLeft 1s;
+	animation: fromBottom 1s .4s backwards;
+	animation: fromLeft .5s .4s backwards;
 }
 
 section div {
@@ -82,11 +81,13 @@ section div {
 	padding: 32px;
 	padding-top: 24px;
 	border-radius: 8px;
-	animation: fromRight 1s;
+	animation: fromBottom 1s .8s backwards;
+	animation: fromRight .5s .8s backwards;
 }
 
 section div:last-child {
-	animation: fromLeft 1s;
+	animation: fromBottom 1s 1s backwards;
+	animation: fromLeft .5s 1s backwards;
 }
 
 section h2 {
@@ -105,7 +106,6 @@ section ul {
 	flex-wrap: wrap;
 	gap: 16px;
 }
-
 
 /* Section Content
 ------------------------------------------*/
@@ -136,27 +136,44 @@ section ul li img:hover {
 
 @keyframes fromLeft {
 	from {
+		opacity: 0;
 		transform: translateX(-200px);
 	}
 	to {
+		opacity: 1;
 		transform: translateX(0);
 	}
 }
 
 @keyframes fromRight {
 	from {
+		opacity: 0;
 		transform: translateX(200px);
 	}
 	to {
+		opacity: 1;
 		transform: translateX(0);
 	}
 }
 
 @keyframes fromTop {
 	from {
-		transform: translateY(-200px);
+		opacity: 0;
+		transform: translateY(-180px);
 	}
 	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fromBottom {
+	from {
+		opacity: 0;
+		transform: translateY(180px);
+	}
+	to {
+		opacity: 1;
 		transform: translateY(0);
 	}
 }
